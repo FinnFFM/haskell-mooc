@@ -1,5 +1,26 @@
 # Haskell MOOC
 
+## Practice fork
+
+This fork contains working solutions for **Sets 1, 2a, 2b, 3a, 3b, 4a, 4b and 5a**, imported from existing local exercise files. All **85 exercise checks** in these sets pass the unchanged upstream test suites with Stack's GHC 9.2.8 (`lts-20.25`). Later sets remain as provided upstream.
+
+Run the completed sets from the repository root with Stack and Python 3 installed:
+
+```bash
+python3 check-practice.py
+```
+
+The helper checks the generated scores as well as the process exit status, since the course test runner can exit successfully even when an exercise fails. To run one set directly:
+
+```bash
+cd exercises
+stack runhaskell Set1Test.hs
+```
+
+Repository setup, documentation and test verification were assisted by Codex. The eight exercise implementations retain their existing logic, with only trailing whitespace cleaned up; no additional solution code was generated in this update. Original course authorship and licensing remain below. Source: [moocfi/haskell-mooc](https://github.com/moocfi/haskell-mooc).
+
+---
+
 <p align="center"><img alt="Course logo" src="img/haskell-mooc-logo.svg" width="400" align="center"></p>
 
 University of Helsinki
